@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <LinearLayout
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/layout_video_player"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            layout="@layout/layout_video_player" />
+       
+
+        <ListView
+            android:id="@+id/listview_video_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:listSelector="#00000000" />
+        
+          <org.apache.cordova.CordovaWebView 
+            android:id="@+id/video_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:listSelector="#00000000" />
+        
+    </LinearLayout>
+
+</LinearLayout>
